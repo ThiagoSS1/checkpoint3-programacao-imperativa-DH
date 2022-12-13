@@ -3,18 +3,18 @@ function Aluno (nome, qtdDeFaltas, notas) {
     this.qtdDeFaltas = qtdDeFaltas;
     this.notas = notas;
 
-    // this.calculaMedia = function () {
-    //     const soma = this.notas.reduce((acumulador, nota) => {
-    //         return acumulador + nota;
-    //     }, 0);
-    //     const media = soma / this.notas.length;
-    //     return media
-    // };
+    this.calculaMedia = function () {
+        const soma = this.notas.reduce((acumulador, nota) => {
+            return acumulador + nota;
+        }, 0);
+        const media = soma / this.notas.length;
+        return media
+    };
 
-    // this.faltas = function () {
-    //     this.qtdDeFaltas += 1;
-    //     return this.qtdDeFaltas;
-    // }
+    this.faltas = function () {
+        this.qtdDeFaltas += 1;
+        return this.qtdDeFaltas;
+    }
 
 }
 
